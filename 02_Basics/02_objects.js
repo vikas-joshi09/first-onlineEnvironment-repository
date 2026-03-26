@@ -69,3 +69,37 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty('islogIn'));
+
+
+
+// de-structure and JSON api------
+
+const course = {
+    coursename: "js in hindi",
+    price: 999,
+    courseInsstructor: "Vikas"
+}
+console.log(course.courseInsstructor);
+
+const {courseInsstructor: instror} = course;
+console.log(instror);
+
+// navbar---
+
+const navbar = ({company})=>{
+
+}
+
+navbar(company = 'IDDS');
+
+
+//API's-------------------------
+//JSON === JavaScript Object
+
+// {
+//     Name: 'vikas',
+//     coursename: 'js in hindi',
+//     mobile No. = 93393722922
+
+// }
+
