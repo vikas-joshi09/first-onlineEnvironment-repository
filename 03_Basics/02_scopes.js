@@ -42,7 +42,7 @@ addTwo(5); // if you call this function before declaration it gives error;
 
 
 
-// this--------use for currentContext 
+// this--------use for currentContext {under scope}
 
 const user = {
     username: "Vikas",
@@ -61,20 +61,20 @@ const user = {
 
 // function chai(){
 //     let username = "Vikas"
-//     console.log(this);
+//     console.log(this);  
 // }
 // chai();
 
 
 // const chai = function () {
 //     let username = "ramesh";
-//     console.log(this.username);
+//     console.log(this.username); //undefined  
 // }
 // chai();
 
 const chai = ()=>{
     let username = "Vikas";
-    console.log(this.username);
+    console.log(this.username); // undefined
 }
 chai();
 
@@ -85,11 +85,13 @@ chai();
 // const addnum = (num1, num2)=>{
 //     return num1 + num2;
 // }
-// console.log(addnum(2,3));
 
 // const addnum = (num1,num2)=> num1 + num2;
 
 // const addnum = (num1, num2)=> (num1 + num2);
+
+// console.log(addnum(2,3));
+
 
 const addnum = () => ({username: "Vikas"});
 console.log(addnum());
