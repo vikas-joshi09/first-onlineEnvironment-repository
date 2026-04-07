@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async2</title>
+</head>
+<body>
+    <h1>Async</h1>
+</body>
+<script>
+    const sayVikas = function () {
+        console.log("Vikas");
+    }
+
+    setTimeout(sayVikas, 3000);
+
+
+    const changeHeading = ()=>{
+    document.querySelector('h1').innerHTML = 'hello world lets learn async';
+
+    }
+
+    const changeMe = setTimeout(changeHeading, 5000);
+
+    clearTimeout(changeMe);
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async3</title>
+</head>
+<body>
+    <h1>Hello World, </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+  let interval =   setInterval(function(){
+        console.log('VIKAS', Date.now());
+    }, 2000);
+
+    clearInterval(interval);
+
+</script>
+</html>
